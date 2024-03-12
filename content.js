@@ -48,9 +48,9 @@ config = {
                     "ч": "ch",
                     "ш": "sh",
                     "щ": "ssh",
-                    "ъ": "<spqru lssep>",
+                    "ъ": "<spqru j>",
                     "ы": "i",
-                    "ь": "<spqru lssep>",
+                    "ь": "<spqru j>",
                     "э": "e"
                 },
                 {
@@ -78,17 +78,13 @@ config = {
                     "ю": "u",
                     "я": "ia"
                 },
-                // {
-                //     "ъ": "'",
-                //     "ь": "'",
-                // },
                 {
-                    "<spqru lssep>e": "'e",
-                    "<spqru lssep>i": "'i",
-                    "<spqru lssep>u": "'u"
+                    "<spqru j>e": "'e",
+                    "<spqru j>i": "'i",
+                    "<spqru j>u": "'u"
                 },
                 {
-                    "<spqru lssep>": ""
+                    "<spqru j>": ""
                 }
             ]
         },
