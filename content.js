@@ -257,8 +257,24 @@ function convertStep(text, step) {
     text = text.replace("</spqru word>", "");
     return text;
 }
-const editableElements = document.querySelectorAll("blockquote, h1, h2, h3, h4, h5, h6, p");
-for (const element of editableElements) {
+
+function* traverse(domNode) {
+    TEXT_NODE_TYPE = 3
+    nodeType = domNode.nodeType
+    // console.log("SQPQRuversed ", { nodeType, domNode, });
+    if (nodeType === TEXT_NODE_TYPE) {
+        yield domNode;
+    }
+    for (const childNode of domNode.childNodes) {
+        yield* traverse(childNode);
+    }
+}
+
+// const editableElements = document.querySelectorAll("blockquote, h1, h2, h3, h4, h5, h6, p");
+
+// console.log("Let's begin SPQRuining")
+for (const element of traverse(document)) {
+    // console.log(`SPQRuining ${element.textContent.substring(0, 20)}...`)
     if (element.textContent === null || element.textContent === undefined) {
         continue;
     }

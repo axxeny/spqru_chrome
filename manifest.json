@@ -11,8 +11,8 @@
     {
       "js": ["content.js"],
       "matches": [
-        "https://meduza.io/feature/*",
-        "https://meduza.io/news/*"
+        "https://meduza.io/*",
+        "https://ru.wikipedia.org/*"
       ]
     }
   ]
