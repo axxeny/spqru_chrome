@@ -85,6 +85,7 @@ config = {
                 {
                     "<spqru-j>e": "'e",
                     "<spqru-j>i": "'i",
+                    "<spqru-j>o": "'o",
                     "<spqru-j>u": "'u"
                 },
                 {
@@ -119,6 +120,8 @@ config = {
                     "<spqru-j>ё": "je",
                     "ъ<spqru-j>и": "ji",
                     "ь<spqru-j>и": "ji",
+                    "ъ<spqru-j>о": "jo",
+                    "ь<spqru-j>о": "jo",
                     "<spqru-j>ю": "ju",
                     "<spqru-j>я": "ja",
                 },
