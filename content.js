@@ -48,9 +48,9 @@ config = {
                     "ч": "ch",
                     "ш": "sh",
                     "щ": "ssh",
-                    "ъ": "<spqru j>",
+                    "ъ": "<spqru-j>",
                     "ы": "i",
-                    "ь": "<spqru j>",
+                    "ь": "<spqru-j>",
                     "э": "e"
                 },
                 {
@@ -83,44 +83,44 @@ config = {
                     "я": "ia"
                 },
                 {
-                    "<spqru j>e": "'e",
-                    "<spqru j>i": "'i",
-                    "<spqru j>u": "'u"
+                    "<spqru-j>e": "'e",
+                    "<spqru-j>i": "'i",
+                    "<spqru-j>u": "'u"
                 },
                 {
-                    "<spqru j>": ""
+                    "<spqru-j>": ""
                 }
             ]
         },
         "ru23": {
             "steps": [
                 {
-                    "<spqru word>": "<spqru word><spqru j>",
+                    "<spqru-word>": "<spqru-word><spqru-j>",
 
-                    "а": "а<spqru j>",
-                    "е": "е<spqru j>",
-                    "ё": "ё<spqru j>",
-                    "и": "и<spqru j>",
-                    "й": "й<spqru j>",
-                    "о": "о<spqru j>",
-                    "у": "у<spqru j>",
-                    "ы": "ы<spqru j>",
-                    "э": "э<spqru j>",
-                    "ю": "ю<spqru j>",
-                    "я": "я<spqru j>",
+                    "а": "а<spqru-j>",
+                    "е": "е<spqru-j>",
+                    "ё": "ё<spqru-j>",
+                    "и": "и<spqru-j>",
+                    "й": "й<spqru-j>",
+                    "о": "о<spqru-j>",
+                    "у": "у<spqru-j>",
+                    "ы": "ы<spqru-j>",
+                    "э": "э<spqru-j>",
+                    "ю": "ю<spqru-j>",
+                    "я": "я<spqru-j>",
 
-                    "ъ": "ъ<spqru j>",
-                    "ь": "ь<spqru j>",
+                    "ъ": "ъ<spqru-j>",
+                    "ь": "ь<spqru-j>",
                 },
                 {
-                    "<spqru word>": "<spqru word><spqru j>",
-                    "а": "а<spqru j>",
-                    "<spqru j>е": "je",
-                    "<spqru j>ё": "je",
-                    "ъ<spqru j>и": "ji",
-                    "ь<spqru j>и": "ji",
-                    "<spqru j>ю": "ju",
-                    "<spqru j>я": "ja",
+                    "<spqru-word>": "<spqru-word><spqru-j>",
+                    "а": "а<spqru-j>",
+                    "<spqru-j>е": "je",
+                    "<spqru-j>ё": "je",
+                    "ъ<spqru-j>и": "ji",
+                    "ь<spqru-j>и": "ji",
+                    "<spqru-j>ю": "ju",
+                    "<spqru-j>я": "ja",
                 },
                 {
                     "а": "a",
@@ -166,7 +166,7 @@ config = {
                     "zhz": "zz",
                 },
                 {
-                    "<spqru j>": ""
+                    "<spqru-j>": ""
                 }
             ]
         },
@@ -186,10 +186,9 @@ class Trie {
         this.root = new TrieNode('*');  // Root node with a placeholder character
     }
 
-    // put a word into the trie
-    put(word, value) {
+    put(key, value) {
         let currentNode = this.root;
-        for (let char of word) {
+        for (let char of key) {
             if (!currentNode.children[char]) {
                 currentNode.children[char] = new TrieNode(char);
             }
@@ -198,23 +197,22 @@ class Trie {
         currentNode.value = value;
     }
 
-    // get for a word in the trie
-    get(word) {
+    get(key) {
         let currentNode = this.root;
-        for (let char of word) {
+        for (let char of key) {
             if (!currentNode.children[char]) {
-                return null;  // Word is not present in the trie
+                return null;
             }
             currentNode = currentNode.children[char];
         }
         return currentNode.value;
     }
 
-    hasSubtrie(word) {
+    hasSubtrie(key) {
         let currentNode = this.root;
-        for (let char of word) {
+        for (let char of key) {
             if (!(char in currentNode.children)) {
-                return false;  // Word is not present in the trie
+                return false;
             }
             currentNode = currentNode.children[char];
         }
@@ -227,7 +225,7 @@ function convertStep(text, step) {
     for (let [key, value] of Object.entries(step)) {
         stepTrie.put(key, value);
     }
-    text = `<spqru word>${text}</spqru word>`;
+    text = `<spqru-word>${text}</spqru-word>`;
     let i = 0;
     let j = 1;
     let candidate = null;
@@ -261,8 +259,8 @@ function convertStep(text, step) {
         }
     }
     text = out.join("");
-    text = text.replace("<spqru word>", "");
-    text = text.replace("</spqru word>", "");
+    text = text.replace("<spqru-word>", "");
+    text = text.replace("</spqru-word>", "");
     return text;
 }
 
@@ -277,8 +275,6 @@ function* traverse(domNode) {
         yield* traverse(childNode);
     }
 }
-
-// const editableElements = document.querySelectorAll("blockquote, h1, h2, h3, h4, h5, h6, p");
 
 // console.log("Let's begin SPQRuining")
 for (const element of traverse(document)) {
