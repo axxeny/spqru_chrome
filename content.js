@@ -61,7 +61,9 @@ config = {
                     "io": "i'o",
                     "iu": "i'u",
                     "oi": "o'i",
-                    "ui": "u'i"
+                    "ui": "u'i",
+                    "shs": "ss",
+                    "zhz": "zz",
                 },
                 {
                     "ai": "a'i",
@@ -71,7 +73,9 @@ config = {
                     "io": "i'o",
                     "iu": "i'u",
                     "oi": "o'i",
-                    "ui": "u'i"
+                    "ui": "u'i",
+                    "shs": "ss",
+                    "zhz": "zz",
                 },
                 {
                     "й": "i",
@@ -152,6 +156,14 @@ config = {
                     "э": "e",
                     "ю": "u",
                     "я": "ia",
+                },
+                {
+                    "shs": "ss",
+                    "zhz": "zz",
+                },
+                {
+                    "shs": "ss",
+                    "zhz": "zz",
                 },
                 {
                     "<spqru j>": ""
