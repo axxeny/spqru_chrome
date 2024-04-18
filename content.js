@@ -93,10 +93,166 @@ config = {
                 }
             ]
         },
-        "ru23": {
+        "ru23e": {
             "steps": [
                 {
                     "<spqru-word>": "<spqru-word><spqru-j>",
+
+                    "а": "а<spqru-j>",
+                    "е": "е<spqru-j>",
+                    "ё": "ё<spqru-j>",
+                    "и": "и<spqru-j>",
+                    "й": "й<spqru-j>",
+                    "о": "о<spqru-j>",
+                    "у": "у<spqru-j>",
+                    "ы": "ы<spqru-j>",
+                    "э": "э<spqru-j>",
+                    "ю": "ю<spqru-j>",
+                    "я": "я<spqru-j>",
+
+                    "ъ": "ъ<spqru-j>",
+                    "ь": "ь<spqru-j>",
+                },
+                {
+                    "<spqru-word>": "<spqru-word><spqru-j>",
+                    "а": "а<spqru-j>",
+                    "<spqru-j>е": "ye",
+                    "<spqru-j>ё": "ye",
+                    "ъ<spqru-j>и": "yi",
+                    "ь<spqru-j>и": "yi",
+                    "ъ<spqru-j>о": "yo",
+                    "ь<spqru-j>о": "yo",
+                    "<spqru-j>ю": "yu",
+                    "<spqru-j>я": "ya",
+                },
+                {
+                    "а": "a",
+                    "б": "b",
+                    "в": "v",
+                    "г": "g",
+                    "д": "d",
+                    "е": "e",
+                    "ё": "e",
+                    "ж": "j",
+                    "з": "z",
+                    "и": "i",
+                    "й": "y",
+                    "к": "k",
+                    "л": "l",
+                    "м": "m",
+                    "н": "n",
+                    "о": "o",
+                    "п": "p",
+                    "р": "r",
+                    "с": "s",
+                    "т": "t",
+                    "у": "u",
+                    "ф": "f",
+                    "х": "h",
+                    "ц": "c",
+                    "ч": "ch",
+                    "ш": "sh",
+                    "щ": "ssh",
+                    "ъ": "",
+                    "ы": "e",
+                    "ь": "",
+                    "э": "e",
+                    "ю": "u",
+                    "я": "ia",
+                },
+                {
+                    "shs": "ss",
+                },
+                {
+                    "shs": "ss",
+                },
+                {
+                    "<spqru-j>": ""
+                }
+            ]
+        },
+        "ru23iy": {
+            "steps": [
+                {
+                    "<spqru-word>": "<spqru-word><spqru-j>",
+
+                    "а": "а<spqru-j>",
+                    "е": "е<spqru-j>",
+                    "ё": "ё<spqru-j>",
+                    "и": "и<spqru-j>",
+                    "й": "й<spqru-j>",
+                    "о": "о<spqru-j>",
+                    "у": "у<spqru-j>",
+                    "ы": "ы<spqru-j>",
+                    "э": "э<spqru-j>",
+                    "ю": "ю<spqru-j>",
+                    "я": "я<spqru-j>",
+
+                    "ъ": "ъ<spqru-j>",
+                    "ь": "ь<spqru-j>",
+                },
+                {
+                    "<spqru-word>": "<spqru-word><spqru-j>",
+                    "а": "а<spqru-j>",
+                    "<spqru-j>е": "ye",
+                    "<spqru-j>ё": "ye",
+                    "ъ<spqru-j>и": "yi",
+                    "ь<spqru-j>и": "yi",
+                    "ъ<spqru-j>о": "yo",
+                    "ь<spqru-j>о": "yo",
+                    "<spqru-j>ю": "yu",
+                    "<spqru-j>я": "ya",
+                },
+                {
+                    "а": "a",
+                    "б": "b",
+                    "в": "v",
+                    "г": "g",
+                    "д": "d",
+                    "е": "e",
+                    "ё": "e",
+                    "ж": "j",
+                    "з": "z",
+                    "и": "i",
+                    "й": "y",
+                    "к": "k",
+                    "л": "l",
+                    "м": "m",
+                    "н": "n",
+                    "о": "o",
+                    "п": "p",
+                    "р": "r",
+                    "с": "s",
+                    "т": "t",
+                    "у": "u",
+                    "ф": "f",
+                    "х": "h",
+                    "ц": "c",
+                    "ч": "ch",
+                    "ш": "sh",
+                    "щ": "ssh",
+                    "ъ": "",
+                    "ы": "i",
+                    "ь": "",
+                    "э": "e",
+                    "ю": "u",
+                    "я": "ia",
+                },
+                {
+                    "shs": "ss",
+                },
+                {
+                    "shs": "ss",
+                },
+                {
+                    "<spqru-j>": ""
+                }
+            ]
+        },
+        "ru23": {
+            "steps": [
+                {
+                    "<spqru-word>": "<spqru-word><spqru-y>",
 
                     "а": "а<spqru-j>",
                     "е": "е<spqru-j>",
@@ -167,6 +323,597 @@ config = {
                 {
                     "shs": "ss",
                     "zhz": "zz",
+                },
+                {
+                    "<spqru-j>": ""
+                }
+            ]
+        },
+        "ru23uy": {
+            "steps": [
+                {
+                    "<spqru-word>": "<spqru-word><spqru-j>",
+
+                    "а": "а<spqru-j>",
+                    "е": "е<spqru-j>",
+                    "ё": "ё<spqru-j>",
+                    "и": "и<spqru-j>",
+                    "й": "й<spqru-j>",
+                    "о": "о<spqru-j>",
+                    "у": "у<spqru-j>",
+                    "ы": "ы<spqru-j>",
+                    "э": "э<spqru-j>",
+                    "ю": "ю<spqru-j>",
+                    "я": "я<spqru-j>",
+
+                    "ъ": "ъ<spqru-j>",
+                    "ь": "ь<spqru-j>",
+                },
+                {
+                    "<spqru-word>": "<spqru-word><spqru-j>",
+                    "а": "а<spqru-j>",
+                    "<spqru-j>е": "je",
+                    "<spqru-j>ё": "je",
+                    "ъ<spqru-j>и": "ji",
+                    "ь<spqru-j>и": "ji",
+                    "ъ<spqru-j>о": "jo",
+                    "ь<spqru-j>о": "jo",
+                    "<spqru-j>ю": "ju",
+                    "<spqru-j>я": "ja",
+                },
+                {
+                    "а": "a",
+                    "б": "b",
+                    "в": "v",
+                    "г": "g",
+                    "д": "d",
+                    "е": "e",
+                    "ё": "e",
+                    "ж": "zh",
+                    "з": "z",
+                    "и": "i",
+                    "й": "j",
+                    "к": "k",
+                    "л": "l",
+                    "м": "m",
+                    "н": "n",
+                    "о": "o",
+                    "п": "p",
+                    "р": "r",
+                    "с": "s",
+                    "т": "t",
+                    "у": "u",
+                    "ф": "f",
+                    "х": "h",
+                    "ц": "c",
+                    "ч": "ch",
+                    "ш": "sh",
+                    "щ": "ssh",
+                    "ъ": "",
+                    "ы": "ui",
+                    "ь": "",
+                    "э": "e",
+                    "ю": "u",
+                    "я": "ia",
+                },
+                {
+                    "shs": "ss",
+                    "zhz": "zz",
+                },
+                {
+                    "shs": "ss",
+                    "zhz": "zz",
+                },
+                {
+                    "<spqru-j>": ""
+                },
+                {
+                    "ij": "y",
+                },
+            ]
+        },
+        "ru23uiy": {
+            "steps": [
+                {
+                    "<spqru-word>": "<spqru-word><spqru-j>",
+
+                    "а": "а<spqru-j>",
+                    "е": "е<spqru-j>",
+                    "ё": "ё<spqru-j>",
+                    "и": "и<spqru-j>",
+                    "й": "й<spqru-j>",
+                    "о": "о<spqru-j>",
+                    "у": "у<spqru-j>",
+                    "ы": "ы<spqru-j>",
+                    "э": "э<spqru-j>",
+                    "ю": "ю<spqru-j>",
+                    "я": "я<spqru-j>",
+
+                    "ъ": "ъ<spqru-j>",
+                    "ь": "ь<spqru-j>",
+                },
+                {
+                    "<spqru-word>": "<spqru-word><spqru-j>",
+                    "а": "а<spqru-j>",
+                    "<spqru-j>е": "ye",
+                    "<spqru-j>ё": "ye",
+                    "ъ<spqru-j>и": "yi",
+                    "ь<spqru-j>и": "yi",
+                    "ъ<spqru-j>о": "yo",
+                    "ь<spqru-j>о": "yo",
+                    "<spqru-j>ю": "yu",
+                    "<spqru-j>я": "ya",
+                },
+                {
+                    "а": "a",
+                    "б": "b",
+                    "в": "v",
+                    "г": "g",
+                    "д": "d",
+                    "е": "e",
+                    "ё": "e",
+                    "ж": "j",
+                    "з": "z",
+                    "и": "i",
+                    "й": "y",
+                    "к": "k",
+                    "л": "l",
+                    "м": "m",
+                    "н": "n",
+                    "о": "o",
+                    "п": "p",
+                    "р": "r",
+                    "с": "s",
+                    "т": "t",
+                    "у": "u",
+                    "ф": "f",
+                    "х": "h",
+                    "ц": "c",
+                    "ч": "ch",
+                    "ш": "sh",
+                    "щ": "ssh",
+                    "ъ": "",
+                    "ы": "ui",
+                    "ь": "",
+                    "э": "e",
+                    "ю": "u",
+                    "я": "ia",
+                },
+                {
+                    "shs": "ss",
+                },
+                {
+                    "shs": "ss",
+                },
+                {
+                    "<spqru-j>": ""
+                }
+            ]
+        },
+        "ru24w": {
+            "steps": [
+                {
+                    "<spqru-word>": "<spqru-word><spqru-j>",
+
+                    "а": "а<spqru-j>",
+                    "е": "е<spqru-j>",
+                    "ё": "ё<spqru-j>",
+                    "и": "и<spqru-j>",
+                    "й": "й<spqru-j>",
+                    "о": "о<spqru-j>",
+                    "у": "у<spqru-j>",
+                    "ы": "ы<spqru-j>",
+                    "э": "э<spqru-j>",
+                    "ю": "ю<spqru-j>",
+                    "я": "я<spqru-j>",
+
+                    "ъ": "ъ<spqru-j>",
+                    "ь": "ь<spqru-j>",
+                },
+                {
+                    "<spqru-word>": "<spqru-word><spqru-j>",
+                    "а": "а<spqru-j>",
+                    "<spqru-j>е": "ye",
+                    "<spqru-j>ё": "ye",
+                    "ъ<spqru-j>и": "yi",
+                    "ь<spqru-j>и": "yi",
+                    "ъ<spqru-j>о": "yo",
+                    "ь<spqru-j>о": "yo",
+                    "<spqru-j>ю": "yu",
+                    "<spqru-j>я": "ya",
+                },
+                {
+                    "а": "a",
+                    "б": "b",
+                    "в": "v",
+                    "г": "g",
+                    "д": "d",
+                    "е": "e",
+                    "ё": "e",
+                    "ж": "j",
+                    "з": "z",
+                    "и": "i",
+                    "й": "y",
+                    "к": "k",
+                    "л": "l",
+                    "м": "m",
+                    "н": "n",
+                    "о": "o",
+                    "п": "p",
+                    "р": "r",
+                    "с": "s",
+                    "т": "t",
+                    "у": "u",
+                    "ф": "f",
+                    "х": "h",
+                    "ц": "c",
+                    "ч": "ch",
+                    "ш": "sh",
+                    "щ": "ssh",
+                    "ъ": "",
+                    "ы": "w",
+                    "ь": "",
+                    "э": "e",
+                    "ю": "u",
+                    "я": "ia",
+                },
+                {
+                    "shs": "ss",
+                },
+                {
+                    "shs": "ss",
+                },
+                {
+                    "<spqru-j>": ""
+                }
+            ]
+        },
+        "ru24xiy": {
+            "acronym_steps": [
+                {
+                    "а": "a",
+                    "б": "b",
+                    "в": "v",
+                    "г": "g",
+                    "д": "d",
+                    "е": "y",
+                    "ё": "y",
+                    "ж": "j",
+                    "з": "z",
+                    "и": "i",
+                    "й": "y",
+                    "к": "k",
+                    "л": "l",
+                    "м": "m",
+                    "н": "n",
+                    "о": "o",
+                    "п": "p",
+                    "р": "r",
+                    "с": "s",
+                    "т": "t",
+                    "у": "u",
+                    "ф": "f",
+                    "х": "h",
+                    "ц": "c",
+                    "ч": "c",
+                    "ш": "s",
+                    "щ": "s",
+                    "ы": "i",
+                    "э": "e",
+                    "ю": "u",
+                    "я": "i",
+                },
+            ],
+            "steps": [
+                {
+                    "<spqru-word>": "<spqru-word><spqru-j>",
+
+                    "а": "а<spqru-j>",
+                    "е": "е<spqru-j>",
+                    "ё": "ё<spqru-j>",
+                    "и": "и<spqru-j>",
+                    "й": "й<spqru-j>",
+                    "о": "о<spqru-j>",
+                    "у": "у<spqru-j>",
+                    "ы": "ы<spqru-j>",
+                    "э": "э<spqru-j>",
+                    "ю": "ю<spqru-j>",
+                    "я": "я<spqru-j>",
+
+                    "ъ": "ъ<spqru-j>",
+                    "ь": "ь<spqru-j>",
+                },
+                {
+                    "<spqru-word>": "<spqru-word><spqru-j>",
+                    "а": "а<spqru-j>",
+                    "<spqru-j>е": "ye",
+                    "<spqru-j>ё": "ye",
+                    "ъ<spqru-j>и": "yi",
+                    "ь<spqru-j>и": "yi",
+                    "ъ<spqru-j>о": "yo",
+                    "ь<spqru-j>о": "yo",
+                    "<spqru-j>ю": "yu",
+                    "<spqru-j>я": "ya",
+                },
+                {
+                    "а": "a",
+                    "б": "b",
+                    "в": "v",
+                    "г": "g",
+                    "д": "d",
+                    "е": "e",
+                    "ё": "e",
+                    "ж": "j",
+                    "з": "z",
+                    "и": "i",
+                    "й": "y",
+                    "к": "k",
+                    "кз": "x",
+                    "кс": "x",
+                    "л": "l",
+                    "м": "m",
+                    "н": "n",
+                    "о": "o",
+                    "п": "p",
+                    "р": "r",
+                    "с": "s",
+                    "т": "t",
+                    "у": "u",
+                    "ф": "f",
+                    "х": "h",
+                    "ц": "c",
+                    "ч": "ch",
+                    "ш": "sh",
+                    "щ": "ssh",
+                    "ъ": "",
+                    "ы": "i",
+                    "ь": "",
+                    "э": "e",
+                    "ю": "u",
+                    "я": "ia",
+                },
+                {
+                    "shs": "ss",
+                },
+                {
+                    "shs": "ss",
+                },
+                {
+                    "<spqru-j>": ""
+                }
+            ]
+        },
+        "ru24xiy_j_is_tʃ": {
+            "acronym_steps": [
+                {
+                    "а": "a",
+                    "б": "b",
+                    "в": "v",
+                    "г": "g",
+                    "д": "d",
+                    "е": "y",
+                    "ё": "y",
+                    "ж": "z",
+                    "з": "z",
+                    "и": "i",
+                    "й": "y",
+                    "к": "k",
+                    "л": "l",
+                    "м": "m",
+                    "н": "n",
+                    "о": "o",
+                    "п": "p",
+                    "р": "r",
+                    "с": "s",
+                    "т": "t",
+                    "у": "u",
+                    "ф": "f",
+                    "х": "h",
+                    "ц": "c",
+                    "ч": "j",
+                    "ш": "s",
+                    "щ": "s",
+                    "ы": "i",
+                    "э": "e",
+                    "ю": "u",
+                    "я": "i",
+                },
+            ],
+            "steps": [
+                {
+                    "<spqru-word>": "<spqru-word><spqru-j>",
+
+                    "а": "а<spqru-j>",
+                    "е": "е<spqru-j>",
+                    "ё": "ё<spqru-j>",
+                    "и": "и<spqru-j>",
+                    "й": "й<spqru-j>",
+                    "о": "о<spqru-j>",
+                    "у": "у<spqru-j>",
+                    "ы": "ы<spqru-j>",
+                    "э": "э<spqru-j>",
+                    "ю": "ю<spqru-j>",
+                    "я": "я<spqru-j>",
+
+                    "ъ": "ъ<spqru-j>",
+                    "ь": "ь<spqru-j>",
+                },
+                {
+                    "<spqru-word>": "<spqru-word><spqru-j>",
+                    "а": "а<spqru-j>",
+                    "<spqru-j>е": "ye",
+                    "<spqru-j>ё": "ye",
+                    "ъ<spqru-j>и": "yi",
+                    "ь<spqru-j>и": "yi",
+                    "ъ<spqru-j>о": "yo",
+                    "ь<spqru-j>о": "yo",
+                    "<spqru-j>ю": "yu",
+                    "<spqru-j>я": "ya",
+                },
+                {
+                    "а": "a",
+                    "б": "b",
+                    "в": "v",
+                    "г": "g",
+                    "д": "d",
+                    "дж": "j",
+                    "е": "e",
+                    "ё": "e",
+                    "ж": "zh",
+                    "жж": "zj",
+                    "з": "z",
+                    "зж": "zj",
+                    "зч": "zj",
+                    "и": "i",
+                    "й": "y",
+                    "к": "k",
+                    "кз": "x",
+                    "кс": "x",
+                    "л": "l",
+                    "м": "m",
+                    "н": "n",
+                    "о": "o",
+                    "п": "p",
+                    "р": "r",
+                    "с": "s",
+                    "т": "t",
+                    "у": "u",
+                    "ф": "f",
+                    "х": "h",
+                    "ц": "c",
+                    "ч": "j",
+                    "ш": "sh",
+                    "щ": "sj",
+                    "ъ": "",
+                    "ы": "i",
+                    "ь": "",
+                    "э": "e",
+                    "ю": "u",
+                    "я": "ia",
+                },
+                {
+                    "<spqru-j>": ""
+                }
+            ]
+        },
+        "ru25xquiy": {
+            "acronym_steps": [
+                {
+                    "а": "a",
+                    "б": "b",
+                    "в": "v",
+                    "г": "g",
+                    "д": "d",
+                    "е": "y",
+                    "ё": "y",
+                    "ж": "j",
+                    "з": "z",
+                    "и": "i",
+                    "й": "y",
+                    "к": "k",
+                    "л": "l",
+                    "м": "m",
+                    "н": "n",
+                    "о": "o",
+                    "п": "p",
+                    "р": "r",
+                    "с": "s",
+                    "т": "t",
+                    "у": "u",
+                    "ф": "f",
+                    "х": "h",
+                    "ц": "c",
+                    "ч": "c",
+                    "ш": "s",
+                    "щ": "s",
+                    "ы": "i",
+                    "э": "e",
+                    "ю": "u",
+                    "я": "i",
+                },
+            ],
+            "steps": [
+                {
+                    "<spqru-word>": "<spqru-word><spqru-j>",
+
+                    "а": "а<spqru-j>",
+                    "е": "е<spqru-j>",
+                    "ё": "ё<spqru-j>",
+                    "и": "и<spqru-j>",
+                    "й": "й<spqru-j>",
+                    "о": "о<spqru-j>",
+                    "у": "у<spqru-j>",
+                    "ы": "ы<spqru-j>",
+                    "э": "э<spqru-j>",
+                    "ю": "ю<spqru-j>",
+                    "я": "я<spqru-j>",
+
+                    "ъ": "ъ<spqru-j>",
+                    "ь": "ь<spqru-j>",
+                },
+                {
+                    "<spqru-word>": "<spqru-word><spqru-j>",
+                    "а": "а<spqru-j>",
+                    "<spqru-j>е": "ye",
+                    "<spqru-j>ё": "ye",
+                    "ъ<spqru-j>и": "yi",
+                    "ь<spqru-j>и": "yi",
+                    "ъ<spqru-j>о": "yo",
+                    "ь<spqru-j>о": "yo",
+                    "<spqru-j>ю": "yu",
+                    "<spqru-j>я": "ya",
+                },
+
+                // this should better be solved by splitting the word
+                // into morphemes.
+                {
+                    "букв": "bukv",
+                    "москв": "moskv",
+                },
+
+                {
+                    "а": "a",
+                    "б": "b",
+                    "в": "v",
+                    "г": "g",
+                    "д": "d",
+                    "е": "e",
+                    "ё": "e",
+                    "ж": "j",
+                    "з": "z",
+                    "и": "i",
+                    "й": "y",
+                    "к": "k",
+                    "кв": "qu",
+                    "кз": "x",
+                    "кс": "x",
+                    "л": "l",
+                    "м": "m",
+                    "н": "n",
+                    "о": "o",
+                    "п": "p",
+                    "р": "r",
+                    "с": "s",
+                    "т": "t",
+                    "у": "u",
+                    "ф": "f",
+                    "х": "h",
+                    "ц": "c",
+                    "ч": "ch",
+                    "ш": "sh",
+                    "щ": "ssh",
+                    "ъ": "",
+                    "ы": "i",
+                    "ь": "",
+                    "э": "e",
+                    "ю": "u",
+                    "я": "ia",
+                },
+                {
+                    "shs": "ss",
+                },
+                {
+                    "shs": "ss",
                 },
                 {
                     "<spqru-j>": ""
@@ -294,24 +1041,32 @@ for (const element of traverse(document)) {
     }
     words = [...words];
     let translatedWords = [];
+    let METHOD = "ru24xiy_j_is_tʃ";
     for (let i = 0; i < words.length; i++) {
-      let word = words[i];
-      if (word === undefined || word === null || word.length <= 0 || !word[0].match(cyrillicRe)) {
-        translatedWords.push(word);
-        continue;
-      }
-      let lower = word.toLowerCase();
-      let translatedWord = lower;
-      for (var step of config["methods"]["ru23"]["steps"]) {
-          translatedWord = convertStep(translatedWord, step);
-      }
-      if (lower[0] !== word[0]) {
-          translatedWord = `${translatedWord[0].toUpperCase()}${translatedWord.substring(1)}`;
-      }
-      if (word.length >= 2 && lower[1] !== word[1]) {
-          translatedWord = translatedWord.toUpperCase();
-      }
-      translatedWords.push(translatedWord);
+        let word = words[i];
+        if (word === undefined || word === null || word.length <= 0 || !word[0].match(cyrillicRe)) {
+            translatedWords.push(word);
+            continue;
+        }
+        let lower = word.toLowerCase();
+        let upper = word.toUpperCase();
+
+        let translatedWord = lower;
+        let appropriateSteps = (
+            word === upper && ("acronym_steps" in config["methods"][METHOD])
+            ? "acronym_steps"
+            : "steps"
+        );
+        for (var step of config["methods"][METHOD][appropriateSteps]) {
+            translatedWord = convertStep(translatedWord, step);
+        }
+        if (lower[0] !== word[0]) {
+            translatedWord = `${translatedWord[0].toUpperCase()}${translatedWord.substring(1)}`;
+        }
+        if (word.length >= 2 && lower[1] !== word[1]) {
+            translatedWord = translatedWord.toUpperCase();
+        }
+        translatedWords.push(translatedWord);
     }
   
     // // Uncomment for production:

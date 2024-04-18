@@ -16,8 +16,8 @@
     {
       "js": ["content.js"],
       "matches": [
-        "https://meduza.io/*",
-        "https://ru.wikipedia.org/*"
+        "https://ru.wikipedia.org/*",
+        "https://*.un.org/ru/*"
       ]
     }
   ]
