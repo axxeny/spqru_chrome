@@ -17,7 +17,8 @@
       "js": ["content.js"],
       "matches": [
         "https://ru.wikipedia.org/*",
-        "https://*.un.org/ru/*"
+        "https://*.un.org/ru/*",
+        "https://www.primeminister.am/hy/constitution*"
       ]
     }
   ]

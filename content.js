@@ -14,6 +14,75 @@
 
 config = {
     "methods": {
+        "am_compact": {
+            "steps": [
+                {
+                    "<spqru-word>": "<spqru-word><spqru-y>",
+                    "ա": "ա<spqru-y>",
+                    "ե": "ե<spqru-y>",
+                    "է": "է<spqru-y>",
+                    "ը": "ը<spqru-y>",
+                    "ի": "ի<spqru-y>",
+                    "յ": "յ<spqru-y>",
+                    "ո": "ո<spqru-y>",
+                    "ւ": "ւ<spqru-y>",
+                    "օ": "o<spqru-y>",
+                    "ու": "ու<spqru-y>",
+                },
+                {
+                    "ա": "a",
+                    "բ": "b",
+                    "գ": "g",
+                    "դ": "d",
+                    "ե": "e",
+                    "<spqru-y>ե": "ye",
+                    "զ": "z",
+                    "է": "e",
+                    "ը": "ë",
+                    "թ": "t'",
+                    "ժ": "ž",
+                    "ի": "i",
+                    "լ": "l",
+                    "խ": "x",
+                    "ծ": "c",
+                    "կ": "k",
+                    "հ": "h",
+                    "ձ": "dz",
+                    "ղ": "gh",
+                    "ճ": "č",
+                    "մ": "m",
+                    "յ": "y",
+                    "ն": "n",
+                    "շ": "š",
+                    "<spqru-word>ո": "<spqru-word>vo",
+                    "ո": "o",
+                    "չ": "č'",
+                    "պ": "p",
+                    "ջ": "j",
+                    "ռ": "rr",
+                    "ս": "s",
+                    "վ": "v",
+                    "ավ": "au",
+                    "եվ": "eu",
+                    "<spqru-y>եվ": "yeu",
+                    "իվ": "iu",
+                    "տ": "t",
+                    "ր": "r",
+                    "ց": "c'",
+                    "ւ": "u",
+                    "փ": "p'",
+                    "ք": "k'",
+                    "օ": "o",
+                    "ֆ": "f",
+                    "ու": "ou",
+                    "և": "eu",
+                    "<spqru-y>և": "yeu",
+                },
+                {
+                    "<spqru-y>": "",
+                }
+            ]
+        },
         "ru21": {
             "steps": [
                 {
@@ -1033,18 +1102,21 @@ for (const element of traverse(document)) {
         continue;
     }
     const text = element.textContent;
-    const bothRe = /[А-ЯЁа-яё]+|.+?(?=[А-ЯЁа-яё]+)|.+/g;
-    const cyrillicRe = /[А-ЯЁа-яё]+/g;
+    // const bothRe = /[А-ЯЁа-яё]+|.+?(?=[А-ЯЁа-яё]+)|.+/g;
+    // const cyrillicRe = /[А-ЯЁа-яё]+/g;
+    const bothRe = /[Ա-Ֆա-և]+|.+?(?=[Ա-Ֆա-և]+)|.+/g;
+    const transliterationRe = /[Ա-Ֆա-և]+/g;
     let words = text.match(bothRe);
     if (words === null) {
         words = [];
     }
     words = [...words];
     let translatedWords = [];
-    let METHOD = "ru24xiy_j_is_tʃ";
+    // let METHOD = "ru24xiy_j_is_tʃ";
+    let METHOD = "am_compact";
     for (let i = 0; i < words.length; i++) {
         let word = words[i];
-        if (word === undefined || word === null || word.length <= 0 || !word[0].match(cyrillicRe)) {
+        if (word === undefined || word === null || word.length <= 0 || !word[0].match(transliterationRe)) {
             translatedWords.push(word);
             continue;
         }
